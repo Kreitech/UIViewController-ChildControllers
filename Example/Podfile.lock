@@ -1,0 +1,14 @@
+PODS:
+  - UIViewController+ChildControllers (1.0.0)
+
+DEPENDENCIES:
+  - UIViewController+ChildControllers (from `../`)
+
+EXTERNAL SOURCES:
+  UIViewController+ChildControllers:
+    :path: ../
+
+SPEC CHECKSUMS:
+  UIViewController+ChildControllers: 85f6c4a3787f51ecce4215e33488cd5bcdb6e4fa
+
+COCOAPODS: 0.36.0.rc.1
