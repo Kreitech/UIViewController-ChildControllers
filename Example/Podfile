@@ -1,11 +1,9 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'ChildControllers', :exclusive => true do
-  pod "UIViewController+ChildControllers", :path => "../"
+target 'Example', :exclusive => true do
+  pod 'UIViewController+ChildControllers', :path => '../'
 end
 
 target 'Tests', :exclusive => true do
-  pod "UIViewController+ChildControllers", :path => "../"
-
-  
+  pod 'UIViewController+ChildControllers', :path => '../'
 end

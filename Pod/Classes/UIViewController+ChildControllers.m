@@ -83,7 +83,7 @@
   [view addSubview:childController.view];
 
   constraintsBlock(view, childController.view);
-//  [view layoutIfNeeded];
+  [view layoutIfNeeded];
 
   if (!animationBlock) {
     [childController didMoveToParentViewController:self];

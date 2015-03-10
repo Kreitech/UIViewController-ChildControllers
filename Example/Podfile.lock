@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  UIViewController+ChildControllers: 85f6c4a3787f51ecce4215e33488cd5bcdb6e4fa
+  UIViewController+ChildControllers: 533a6a4d9dd4cc2c00788fa4e7c14c2d391ae23a
 
 COCOAPODS: 0.36.0.rc.1
