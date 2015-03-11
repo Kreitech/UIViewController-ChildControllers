@@ -82,6 +82,8 @@
   [self addChildViewController:childController];
   [view addSubview:childController.view];
 
+  childController.view.translatesAutoresizingMaskIntoConstraints = NO;
+
   constraintsBlock(view, childController.view);
   [view layoutIfNeeded];
 
