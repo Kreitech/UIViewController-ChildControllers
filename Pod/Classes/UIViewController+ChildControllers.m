@@ -10,6 +10,25 @@
 
 @implementation UIViewController (ChildControllers)
 
+#pragma mark - Frames Support
+
+- (void)presentChildController:(UIViewController *)childController
+                        inView:(UIView *)view
+                       atFrame:(CGRect)frame {
+  [childController willMoveToParentViewController:self];
+
+  [self addChildViewController:childController];
+  childController.view.frame = frame;
+
+  [view addSubview:childController.view];
+
+  [view layoutIfNeeded];
+
+  [childController didMoveToParentViewController:self];
+}
+
+#pragma mark - Constraints Support
+
 - (void)presentChildController:(UIViewController *)childController inView:(UIView *)view {
   [self presentChildController:childController
                         inView:view

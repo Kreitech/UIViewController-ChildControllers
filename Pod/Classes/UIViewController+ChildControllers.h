@@ -11,6 +11,17 @@
 @interface UIViewController (ChildControllers)
 
 /**
+ *  Presents the child controller in the given view at the given frame
+ *
+ *  @param childController The controller to present
+ *  @param view            The parent view for the childController view
+ *  @param frame           The frame where the childController view will be positioned
+ */
+- (void)presentChildController:(UIViewController *)childController
+                        inView:(UIView *)view
+                       atFrame:(CGRect)frame;
+
+/**
  *  Presents the child controller talking the hole size of its containter view.
  *
  *  @param childController The controller to present
